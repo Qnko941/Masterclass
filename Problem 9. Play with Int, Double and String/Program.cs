@@ -6,7 +6,19 @@ namespace Problem_9._Play_with_Int__Double_and_String
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string c = Console.ReadLine();
+            int value;
+
+            if (int.TryParse(c, out value)) {
+                value++;
+                Console.WriteLine(value);
+            }
+            else
+            {
+                c += "*";
+                Console.WriteLine(c);
+            }
+
         }
     }
 }
